@@ -41,7 +41,7 @@ EFI for Gigabyte B460M Aorus Pro with OpenCore bootloader
 ### MacOS bootable USB creation:
 
 You should choose offline installer
-- Online Reccovery: [Guide Dortania](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) - 
+- Online Reccovery: [Guide Dortania](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)
 - **Offline install**: [Olarila](https://www.olarila.com/topic/20908-guide-easy-fast-and-perfect-hackintosh-vanilla-step-by-step-clover-and-opencore-bootloader/) 
 
 ### USB Mapping
