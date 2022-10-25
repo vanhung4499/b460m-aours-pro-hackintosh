@@ -35,7 +35,7 @@ EFI for Gigabyte B460M Aorus Pro with OpenCore bootloader
 - [x] All Sensors (CPU, GPU, NVME, SATA, FANS)
 - [x] Intel I219 LAN
 - [x] NVRAM
-- [x] Support macOS Big Sur and Monterey
+- [x] Support macOS Catalina,  Big Sur, Monterey and Ventura
 
 ## Install
 ### MacOS bootable USB creation:
@@ -53,7 +53,10 @@ Choose 1 of 3 configs in EFI/OC then rename it to **Config.plist**:
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Config_iMac20,1_iGPU_only.plist (Default) | Use only iGPU for display output                                                                       |
 | Config_iMac20,1_iGPU_headless.plist       | Use iGPU for Intel QuickSync with AMD GPU or NVIDIA Kelper GPU                                         |
-| Config_iMacPro1,1_AMD_GPU.plist           | Use only AMD Polaris or above for hardware decoding, iGPU off or not available (Intel CPU with F-tail) |
+| Config_iMac20,1_iGPU_headless-Navi.plist       | Use iGPU for Intel QuickSync with AMD Navi GPU (RX 5xxx, RX 6xxx)|
+| Config_iMacPro1,1_AMD_GPU.plist           | Use only AMD Polaris (RX 4xx, RX 5xx) for hardware decoding, iGPU off or not available (Intel CPU with F-tail) |
+| Config_iMacPro1,1_AMD_GPU-Navi.plist           | Use only AMD Navi (RX 5xxx, RX 6xxx) or above for hardware decoding, iGPU off or not available (Intel CPU with F-tail) |
+
 
 ### SMBIOS
 SMBIOS Infos need to be change with [OCAT](https://github.com/ic005k/QtOpenCoreConfig) on Windows or [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) on macOS.
